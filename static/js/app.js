@@ -59,6 +59,9 @@ $.getJSON('static/map/china.json', function(data){
 	//绘制地图
 	renderMap('china',d);
 });
+chart.on('mousemove', function (params) {
+		console.log(params)
+	})
 
 //地图点击事件
 chart.on('click', function (params) {
